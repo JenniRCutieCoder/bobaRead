@@ -1,0 +1,350 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Maybe But Not Always', sans-serif;
+    color:#ffc99b;
+                                             
+}
+/*Main Home Div*/
+.title{
+    font-size:120px;
+}
+.tagline{
+    font-size:30px;
+}
+
+.header{
+    width:100%;
+    height:70vh;
+    padding:0 10%;
+    background: #795b4a;
+}
+
+nav{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 30px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color:#b16c45;
+}
+
+nav ul li:hover{
+    text-decoration: none;
+    background: #ffc99b;
+}
+.bobaLogo{
+    width:300px;
+    height:100px;
+}
+
+
+.bobaBear{
+    width: 500px;
+    height:500px;
+}
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+.text-box{
+    margin-top: 100px;
+    max-width: 600px;
+
+}
+.text-box h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    color:#ffc99b;
+}
+.text-box a{
+    display: inline-block;
+    text-decoration: none;
+    color: #b16c45;
+    background: #ffc99b;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top:50px;
+    border-radius: 6px;
+}
+.text-box a:hover{
+    background: #b16c45;
+    color: #ffc99b;
+}
+
+/*About Us*/
+.aboutUsArea{
+    background:#795b4a;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:850px;
+    position:relative;
+    z-index:2;
+    padding: 50px 0;
+}
+
+
+.aboutUsArea .owl-carousel{
+    overflow: hidden;
+    padding: 0 20px;
+    margin: 0 -30px;
+    padding-right: 40px;
+}
+
+.owl-carousel .owl-stage-outer{
+    padding:40px 50px;
+    margin-left: -40px;
+    width: calc(100% +100px);
+}
+
+.owl-dots{
+    text-align:center;
+    margin-top: 50px;
+}
+
+.owl-dots button{
+    background-color: #ffc99b !important;
+    width:15px;
+    height:15px;
+    border-radius: 26px;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.owl-dots button.active{
+    width:30px;
+}
+
+.about1:before{
+    content: '\f02e';
+    position:absolute;
+    font-family:FontAwesome;
+    left:-35px;
+    top: -15px;
+    background: #795b4a;
+    color:#bb0a1e;
+    font-size: 80px;
+    width: 126px;
+    height: 100px;
+}
+
+.about1{
+    border:7px solid #ffc99b;
+    text-align:center;
+    border-radius:45px;
+    position:relative;
+    z-index:2;
+}
+
+.about1 h3{
+    padding-top:80px;
+    padding-left:70px;
+    padding-right:70px;
+    padding-bottom:50px;
+    font-size:30px;
+}
+.about1 p{
+    font-size:17px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:60px;
+    font-family: 'Mali', cursive;
+}
+
+.aboutUsArea .container{
+    max-width:1140px;
+    width:100%;
+    margin:auto;
+    padding:0 15px;
+}
+
+.aboutUsArea .container .sec-title{
+    position:relative;
+    margin-bottom:50px;
+    padding-bottom: 15px;
+}
+.aboutUsArea .container .sec-title:after{
+    content:' ';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100px;
+    height:3px;
+    background:#ffc99b;
+}
+
+.aboutUsArea .container .sec-title h2{
+    font-size:50px;
+    font-weight:900;
+    letter-spacing:1px;
+}
+.aboutUsArea .container .sec-title p{
+    font-size:18px;
+    line-height:28px;
+}
+
+
+
+
+/*Bobas Div*/
+.meetTheBobas{
+    background-color: #795b4a;
+}
+.content{
+    position: relative;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.textBox1{
+    position: relative;
+    max-width:800px;
+    justify-content: center;
+    background-color:#795b4a;
+}
+.textBox1 h2{
+    font-size:4em;
+    text-align: center;
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+.textBox1 p{
+    color:#ffc99b;
+    text-align: center;
+    padding-left: 200px;
+}
+
+.imgBox{
+    width:600px;
+    display:flex;
+    justify-content:flex-end;
+    padding-right:100px;
+    margin-bottom:250px;
+}
+.imgBox img{
+    max-width:340px;
+}
+.thumb{
+    position: relative;
+    left:50%;
+    bottom:20px;
+    transform: translate(-50%);
+    display:flex; 
+    justify-content: center;
+
+}
+.bobaTea{
+    width:200px;
+    height:200px;
+}
+.thumb li{
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+    cursor:pointer;
+    transition: 0.6s;
+    
+
+}
+.thumb li:hover{
+    transform:translateY(-15px);
+}
+.bobaTeaButton{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.circle{
+    position: absolute;
+    margin-top: 450px;
+    left:0;
+    width:100%;
+    height:60%;
+    background: #e5b4b7;
+    clip-path:circle(600px at right 800px);
+}
+.circleBg{
+    background-color: #795b4a;
+}
+.heading{
+    font-size:70px;
+    text-align: center;
+    padding: 100px;
+}
+
+/*Meet the Creator*/
+.creator{
+    width:100%;
+    padding: 78px 0px;
+}
+
+.creator img{
+    height: auto;
+    width: 420px;
+    margin-right: 200px;
+}
+.creatorText{
+    width:550px;
+}
+.mainCreator{
+    width:1130px;
+    max-width:95%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.creatorText h1{
+    font-size:70px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.creatorText h5{
+    font-size:30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.creatorText p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+}
+.creatorText a{
+
+        display: inline-block;
+        text-decoration: none;
+        color: #b16c45;
+        background: #ffc99b;
+        padding: 10px 30px;
+        font-size: 18px;
+        margin-top:20px;
+        border-radius: 6px;
+}
+.creatorText a:hover{
+    background: #b16c45;
+    color: #ffc99b;
+}

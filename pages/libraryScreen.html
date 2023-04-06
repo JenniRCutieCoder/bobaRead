@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Screen</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="CSS/styleLibrary.css">
+  <link href="https://fonts.cdnfonts.com/css/maybe-but-not-always" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/maybe-but-not-always');
+</style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+          <img class="bobaLogo"src="images/bobaReadLogo.png">
+          <ul>
+            <li><a href="./homeScreen.html">Home</a></li>
+            <li><a href="./libraryScreen.html">Library</a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./images/storySpotlight1.png"></div>
+      <div class="swiper-slide"><img src="./images/storySpotlight2.png"></div>
+      <div class="swiper-slide"><img src="./images/storySpotlight3.png"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+
+  </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay:{
+    delay:3000,
+    disableOnInteraction:false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+    </script>
+
+    <div class="library">
+      
+      <h1>Library</h1>
+      <p>Choose from the wide range of stories within our library</p>
+      <div class="libraryLogos">
+      <a href="/Pages/jungleJ/directions.html"><img src="./images/jungleJohnLogo.png"></a>
+      <a><img src="./images/storyUnavailable.png"></a>
+      <a><img src="./images/storyUnavailable.png"></a>
+    </div>
+    </div>
+
+</body>
+</html>

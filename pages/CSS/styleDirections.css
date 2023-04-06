@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Maybe But Not Always', sans-serif;
+    color:#ffc99b;
+    background-color: #795b4a;
+                                             
+}
+
+.homeIcon{
+    width:90px;
+    height:90px;
+    margin:30px;
+}
+
+.directions1{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.directions1 h1{
+    text-align: center;
+    font-size:40px;
+    margin:30px;
+}
+
+.directions1 h2{
+    text-align:center;
+    font-size:20px;
+    margin:30px;
+}
+
+.bobaBear{
+    width:200px;
+    height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.startButton{
+    display: inline-block;
+    text-decoration: none;
+    color: #b16c45;
+    background: #ffc99b;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top:10px;
+    margin-left:44.5%;
+    border-radius: 6px;
+}
+.startButton:hover{
+    background: #b16c45;
+    color: #ffc99b;
+}
