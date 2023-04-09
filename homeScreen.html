@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Screen</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="CSS/styleHome.css">
+  <link href="https://fonts.cdnfonts.com/css/maybe-but-not-always" rel="stylesheet">
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/maybe-but-not-always');
+</style>
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+
+<body>
+  <!--Nav-->
+  <div class="header">
+    <nav>
+      <img class="bobaLogo"src="images/bobaReadLogo.png">
+      <ul>
+        <li><a href="homeScreen.html">Home</a></li>
+        <li><a href="libraryScreen.html">Library</a></li>
+      </ul>
+    </nav>
+    
+    <!--Header-->
+    <div class="flex">
+      <div class="text-box">
+      <h1 class="title">b<span class="auto-type"></span></h1>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed=new Typed(".auto-type",{
+          strings:["obaRead ! ","obaRead !","obaRead !"],
+          typeSpeed:150,
+          backSpeed:150,
+          loop:true
+        })
+      </script>
+      <p class="tagline">Explore the taste of learning with bobaRead!
+      </p>
+      <script type="text/javascript">
+        function confirm_alert(node) {
+            return confirm("This page is still being designed, please come back later.");
+        }
+        </script>
+        <a href="#" onclick="return confirm_alert(this);">Log-in</a>
+
+    </div>
+      <div class="bobaBearImg">
+      <img class="bobaBear"src="images/bobaBear.png">
+    </div>
+    </div>
+  </div>
+
+  <!--About Us-->
+  <section class="aboutUsArea">
+  <div class="container">
+    <div class="sec-title">
+      <h2>About bobaRead</h2>
+      <p>Learn about this new digital library</p>
+    </div>
+    <div class="sec-content owl-carousel">
+      <div class="about1">
+        <h3>Unique Storylines with Choices</h3>
+        <p>Each story follows a unique storyline where readers can make choices 
+          that influence the storyline leading to different endings each time they play. This allows for a more
+        enjoyable play session and one where the reader will always be able to have fun throughout. </p>
+          
+      </div>
+      <div class="about1">
+        <h3>Different Learning Topics </h3>
+        <p>Each story teaches the reader about different topic such as Math and History
+           but also more career-specific topics such as Coding and Law.
+           The reader will also have to answer questions throughout the story, 
+           helping them learn more about the topic taught in the story. </p>
+          
+      </div>
+      <div class="about1">
+        <h3>User-Friendly Web Design</h3>
+        <p>bobaRead is an interactive, gender-neutral website that works to provide easy functionality and 
+          readability to readers of all types. The website layout is designed to be entertaining with lots 
+          of animation and enjoyable for readers of all ages to use.  
+        </p>
+      </div>
+      <div class="about1">
+        <h3>Topic Progress Tracker Profile</h3>
+        <p>Readers can keep track of how well they are doing with the topic progress tracker. 
+          This progress tracker logs in how many questions you got right based on the topics presented in the story. 
+          With this, the reader can see what topics they need most work on. </p>
+          
+      </div>
+      <div class="about1">
+        <h3>Customizable Playground</h3>
+        <p>To help encourage more reading, readers can access the Shop where they can buy little items for their 
+          playground with coins they earned from playing the stories. 
+          This inspires more creative and lets readers use their imagination when designing their playgrounds.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" ></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sec-content').owlCarousel({
+                  loop:true,
+                  nav:false,
+                  dots:true,
+                  margin:50,
+                  autoplay:true,
+                  autoplayTimeout: 4000,
+                  smartSpeed:800,
+                  responsive:{
+                     0:{
+                      items:1
+                       },
+                    600:{
+                      items:1
+                       },
+                     1000:{
+                      items:2
+                      }
+                   }
+                })
+             });
+  </script>
+</section>
+
+<!--Meet the Bobas-->
+<section class="meetTheBobas">
+  <div>
+    <div class="circle"></div>
+    <section>
+        <h1 class="heading">Meet the Bobas</h1>
+  </div>
+      <ul class="thumb">
+        <li><button class="bobaTeaButton"  onclick="upOneBerry()"><img src="images/Berry.png"class="bobaTea" onclick="imgSlider('images/Berry.png'); changeCircleColor('#e5b4b7')"></button></li>
+        <li><button class="bobaTeaButton" onclick="upOneMatcha()"><img src="images/Matcha.png" class="bobaTea" onclick="imgSlider('images/Matcha.png'); changeCircleColor('#d3e79f')"></button></li>
+        <li><button class="bobaTeaButton" onclick="upOneMango()"><img src="images/Mango.png" class="bobaTea"onclick="imgSlider('images/Mango.png'); changeCircleColor('#ffd162')"></button></li>
+      </ul>
+  </section>
+  <script type="text/javascript">
+    function imgSlider(anything){
+    document.querySelector('.bobas').src=anything;
+
+    }
+    function changeCircleColor(color){
+      const circle=document.querySelector('.circle');
+      circle.style.background = color;
+
+    }
+    function upOneBerry(){
+      document.getElementById('descOfBobas').innerHTML="This is Berry. Berry is a super sweet, loyal boba drink. Berry loves reading fantasy books and knitting sweaters for her family members. She also has a sweet tooth and loves to bake desserts such as brownies, cupcakes, and donuts. Berry’s little sister Blossom helps out Berry in the kitchen a lot when Berry is baking in the kitchen, what a nice sister!";
+      document.getElementById('bobasName').innerHTML='Berry';
+    }
+    function upOneMango(){
+      document.getElementById('descOfBobas').innerHTML="This is Mango. Mango enjoys all the subjects from Math to English, History, and Science. Mango loves helping his friends with any homework they have and enjoys reading books on all kinds of subjects. When Mango isn’t studying, he loves shopping for new suits, playing the guitar, and visiting the local comic store. ";
+      document.getElementById('bobasName').innerHTML='Mango';
+    }
+    function upOneMatcha(){
+      document.getElementById('descOfBobas').innerHTML="This is Matcha. Matcha is one goofball! Matcha loves playing jokes on her friends and going out to different places like the movies or skate parks. She adores surprises and always knows what gifts to buy her friends. Matcha also has a pet dog named Mint who is very energetic and never sleeps at night. ";
+      document.getElementById('bobasName').innerHTML='Matcha';
+    }
+
+  </script>
+  <div class="circleBg">
+        <div class="content">
+          <div class="textBox1">
+            <h2 id="bobasName">Berry</h2>
+            <p id="descOfBobas">This is Berry. Berry is a super sweet, loyal boba drink. Berry loves reading fantasy books and knitting sweaters for her family members. She also has a sweet tooth and loves to bake desserts such as brownies, cupcakes, and donuts. Berry's little sister Blossom helps out Berry in the kitchen a lot when Berry is baking in the kitchen, what a nice sister!</p>
+          </div>
+          <div class="imgBox">
+            <img src="images/Berry.png" class="bobas">
+          </div>
+        </div>
+
+</section>
+<!--Meet the Creator-->
+<section class="creator">
+  <div class="mainCreator">
+    <img src="images/profilepic2.jpeg">
+    <div class="creatorText">
+      <h1>Meet the Creator</h1>
+      <h5>Jennifer Rajesh</h5>
+      <p>Hi there! Thank you for checking out my website, bobaRead! I was inspired to create this website because of my passion for education and teaching children
+        as well as my love for coding. I am super happy to be working on this project because I get to do what I love, coding, and use it to help others and hopefully inspire children to have fun with learning.
+      </p>
+        <a href="contactScreen.html">Contact</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
